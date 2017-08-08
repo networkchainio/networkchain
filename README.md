@@ -1,4 +1,4 @@
-## Go NetworkChain
+## NetworkChain
 
 Official golang implementation of the NetworkChain protocol.
 
