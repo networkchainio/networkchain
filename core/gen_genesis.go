@@ -7,10 +7,10 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/common/hexutil"
-	"github.com/networkchain/go-networkchain/common/math"
-	"github.com/networkchain/go-networkchain/params"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/common/hexutil"
+	"github.com/networkchain/networkchain/common/math"
+	"github.com/networkchain/networkchain/params"
 )
 
 var _ = (*genesisSpecMarshaling)(nil)

@@ -5,11 +5,11 @@ package eth
 import (
 	"math/big"
 
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/common/hexutil"
-	"github.com/networkchain/go-networkchain/core"
-	"github.com/networkchain/go-networkchain/eth/downloader"
-	"github.com/networkchain/go-networkchain/eth/gasprice"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/common/hexutil"
+	"github.com/networkchain/networkchain/core"
+	"github.com/networkchain/networkchain/eth/downloader"
+	"github.com/networkchain/networkchain/eth/gasprice"
 )
 
 func (c Config) MarshalTOML() (interface{}, error) {

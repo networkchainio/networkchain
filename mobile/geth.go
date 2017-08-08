@@ -1,18 +1,18 @@
-// Copyright 2016 The go-networkchain Authors
-// This file is part of the go-networkchain library.
+// Copyright 2016 The networkchain Authors
+// This file is part of the networkchain library.
 //
-// The go-networkchain library is free software: you can redistribute it and/or modify
+// The networkchain library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-networkchain library is distributed in the hope that it will be useful,
+// The networkchain library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-networkchain library. If not, see <http://www.gnu.org/licenses/>.
+// along with the networkchain library. If not, see <http://www.gnu.org/licenses/>.
 
 // Contains all the wrappers from the node package to support client side node
 // management on mobile platforms.
@@ -24,22 +24,22 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/networkchain/go-networkchain/core"
-	"github.com/networkchain/go-networkchain/eth"
-	"github.com/networkchain/go-networkchain/eth/downloader"
-	"github.com/networkchain/go-networkchain/ethclient"
-	"github.com/networkchain/go-networkchain/ethstats"
-	"github.com/networkchain/go-networkchain/les"
-	"github.com/networkchain/go-networkchain/node"
-	"github.com/networkchain/go-networkchain/p2p"
-	"github.com/networkchain/go-networkchain/p2p/nat"
-	"github.com/networkchain/go-networkchain/params"
-	whisper "github.com/networkchain/go-networkchain/whisper/whisperv5"
+	"github.com/networkchain/networkchain/core"
+	"github.com/networkchain/networkchain/eth"
+	"github.com/networkchain/networkchain/eth/downloader"
+	"github.com/networkchain/networkchain/ethclient"
+	"github.com/networkchain/networkchain/ethstats"
+	"github.com/networkchain/networkchain/les"
+	"github.com/networkchain/networkchain/node"
+	"github.com/networkchain/networkchain/p2p"
+	"github.com/networkchain/networkchain/p2p/nat"
+	"github.com/networkchain/networkchain/params"
+	whisper "github.com/networkchain/networkchain/whisper/whisperv5"
 )
 
 // NodeConfig represents the collection of configuration values to fine tune the Netk
 // node embedded into a mobile process. The available values are a subset of the
-// entire API provided by go-networkchain to reduce the maintenance surface and dev
+// entire API provided by networkchain to reduce the maintenance surface and dev
 // complexity.
 type NodeConfig struct {
 	// Bootstrap nodes used to establish connectivity with the rest of the network.

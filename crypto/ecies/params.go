@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/networkchain/go-networkchain/crypto"
+	ethcrypto "github.com/networkchain/networkchain/crypto"
 )
 
 var (

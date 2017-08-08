@@ -1,18 +1,18 @@
-// Copyright 2017 The go-networkchain Authors
-// This file is part of go-networkchain.
+// Copyright 2017 The networkchain Authors
+// This file is part of networkchain.
 //
-// go-networkchain is free software: you can redistribute it and/or modify
+// networkchain is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// go-networkchain is distributed in the hope that it will be useful,
+// networkchain is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with go-networkchain. If not, see <http://www.gnu.org/licenses/>.
+// along with networkchain. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/networkchain/go-networkchain/log"
+	"github.com/networkchain/networkchain/log"
 )
 
 // faucetDockerfile is the Dockerfile required to build an faucet container to
@@ -39,8 +39,8 @@ ENV GOPATH /go
 RUN \
   apk add --update git go make gcc musl-dev ca-certificates linux-headers                             && \
 	mkdir -p $GOPATH/src/github.com/networkchain                                                            && \
-	(cd $GOPATH/src/github.com/networkchain && git clone --depth=1 https://github.com/networkchain/go-networkchain) && \
-  go build -v github.com/networkchain/go-networkchain/cmd/faucet                                              && \
+	(cd $GOPATH/src/github.com/networkchain && git clone --depth=1 https://github.com/networkchain/networkchain) && \
+  go build -v github.com/networkchain/networkchain/cmd/faucet                                              && \
   apk del git go make gcc musl-dev linux-headers                                                      && \
   rm -rf $GOPATH && rm -rf /var/cache/apk/*
 

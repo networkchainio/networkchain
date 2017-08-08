@@ -7,10 +7,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/networkchain/go-networkchain/accounts/abi"
-	"github.com/networkchain/go-networkchain/accounts/abi/bind"
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/core/types"
+	"github.com/networkchain/networkchain/accounts/abi"
+	"github.com/networkchain/networkchain/accounts/abi/bind"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/core/types"
 )
 
 // ReleaseOracleABI is the input ABI used to generate the binding from.

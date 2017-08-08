@@ -37,7 +37,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/networkchain/go-networkchain/common/math"
+	"github.com/networkchain/networkchain/common/math"
 )
 
 /*

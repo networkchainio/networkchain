@@ -1,20 +1,20 @@
-// Copyright 2015 The go-networkchain Authors
-// This file is part of go-networkchain.
+// Copyright 2015 The networkchain Authors
+// This file is part of networkchain.
 //
-// go-networkchain is free software: you can redistribute it and/or modify
+// networkchain is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// go-networkchain is distributed in the hope that it will be useful,
+// networkchain is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with go-networkchain. If not, see <http://www.gnu.org/licenses/>.
+// along with networkchain. If not, see <http://www.gnu.org/licenses/>.
 
-// Package utils contains internal helper functions for go-networkchain commands.
+// Package utils contains internal helper functions for networkchain commands.
 package utils
 
 import (
@@ -28,31 +28,31 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/networkchain/go-networkchain/accounts"
-	"github.com/networkchain/go-networkchain/accounts/keystore"
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/consensus/ethash"
-	"github.com/networkchain/go-networkchain/core"
-	"github.com/networkchain/go-networkchain/core/state"
-	"github.com/networkchain/go-networkchain/core/vm"
-	"github.com/networkchain/go-networkchain/crypto"
-	"github.com/networkchain/go-networkchain/eth"
-	"github.com/networkchain/go-networkchain/eth/downloader"
-	"github.com/networkchain/go-networkchain/eth/gasprice"
-	"github.com/networkchain/go-networkchain/ethdb"
-	"github.com/networkchain/go-networkchain/ethstats"
-	"github.com/networkchain/go-networkchain/event"
-	"github.com/networkchain/go-networkchain/les"
-	"github.com/networkchain/go-networkchain/log"
-	"github.com/networkchain/go-networkchain/metrics"
-	"github.com/networkchain/go-networkchain/node"
-	"github.com/networkchain/go-networkchain/p2p"
-	"github.com/networkchain/go-networkchain/p2p/discover"
-	"github.com/networkchain/go-networkchain/p2p/discv5"
-	"github.com/networkchain/go-networkchain/p2p/nat"
-	"github.com/networkchain/go-networkchain/p2p/netutil"
-	"github.com/networkchain/go-networkchain/params"
-	whisper "github.com/networkchain/go-networkchain/whisper/whisperv5"
+	"github.com/networkchain/networkchain/accounts"
+	"github.com/networkchain/networkchain/accounts/keystore"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/consensus/ethash"
+	"github.com/networkchain/networkchain/core"
+	"github.com/networkchain/networkchain/core/state"
+	"github.com/networkchain/networkchain/core/vm"
+	"github.com/networkchain/networkchain/crypto"
+	"github.com/networkchain/networkchain/eth"
+	"github.com/networkchain/networkchain/eth/downloader"
+	"github.com/networkchain/networkchain/eth/gasprice"
+	"github.com/networkchain/networkchain/ethdb"
+	"github.com/networkchain/networkchain/ethstats"
+	"github.com/networkchain/networkchain/event"
+	"github.com/networkchain/networkchain/les"
+	"github.com/networkchain/networkchain/log"
+	"github.com/networkchain/networkchain/metrics"
+	"github.com/networkchain/networkchain/node"
+	"github.com/networkchain/networkchain/p2p"
+	"github.com/networkchain/networkchain/p2p/discover"
+	"github.com/networkchain/networkchain/p2p/discv5"
+	"github.com/networkchain/networkchain/p2p/nat"
+	"github.com/networkchain/networkchain/p2p/netutil"
+	"github.com/networkchain/networkchain/params"
+	whisper "github.com/networkchain/networkchain/whisper/whisperv5"
 	"gopkg.in/urfave/cli.v1"
 )
 

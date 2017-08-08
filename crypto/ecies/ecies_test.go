@@ -41,7 +41,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/networkchain/go-networkchain/crypto"
+	"github.com/networkchain/networkchain/crypto"
 )
 
 var dumpEnc bool

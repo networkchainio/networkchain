@@ -5,8 +5,8 @@ package tests
 import (
 	"encoding/json"
 
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/common/hexutil"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/common/hexutil"
 )
 
 var _ = (*stLogMarshaling)(nil)

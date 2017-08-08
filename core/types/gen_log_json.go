@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/common/hexutil"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/common/hexutil"
 )
 
 func (l Log) MarshalJSON() ([]byte, error) {

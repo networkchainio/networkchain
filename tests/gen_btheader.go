@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/common/hexutil"
-	"github.com/networkchain/go-networkchain/common/math"
-	"github.com/networkchain/go-networkchain/core/types"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/common/hexutil"
+	"github.com/networkchain/networkchain/common/math"
+	"github.com/networkchain/networkchain/core/types"
 )
 
 var _ = (*btHeaderMarshaling)(nil)

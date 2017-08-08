@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/params"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/params"
 )
 
 func TestByteOp(t *testing.T) {

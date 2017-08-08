@@ -1,18 +1,18 @@
-// Copyright 2015 The go-networkchain Authors
-// This file is part of go-networkchain.
+// Copyright 2015 The networkchain Authors
+// This file is part of networkchain.
 //
-// go-networkchain is free software: you can redistribute it and/or modify
+// networkchain is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// go-networkchain is distributed in the hope that it will be useful,
+// networkchain is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with go-networkchain. If not, see <http://www.gnu.org/licenses/>.
+// along with networkchain. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -25,15 +25,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/networkchain/go-networkchain/cmd/utils"
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/console"
-	"github.com/networkchain/go-networkchain/core"
-	"github.com/networkchain/go-networkchain/core/state"
-	"github.com/networkchain/go-networkchain/core/types"
-	"github.com/networkchain/go-networkchain/ethdb"
-	"github.com/networkchain/go-networkchain/log"
-	"github.com/networkchain/go-networkchain/trie"
+	"github.com/networkchain/networkchain/cmd/utils"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/console"
+	"github.com/networkchain/networkchain/core"
+	"github.com/networkchain/networkchain/core/state"
+	"github.com/networkchain/networkchain/core/types"
+	"github.com/networkchain/networkchain/ethdb"
+	"github.com/networkchain/networkchain/log"
+	"github.com/networkchain/networkchain/trie"
 	"github.com/syndtr/goleveldb/leveldb/util"
 	"gopkg.in/urfave/cli.v1"
 )

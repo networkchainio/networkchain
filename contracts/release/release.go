@@ -1,18 +1,18 @@
-// Copyright 2015 The go-networkchain Authors
-// This file is part of the go-networkchain library.
+// Copyright 2015 The networkchain Authors
+// This file is part of the networkchain library.
 //
-// The go-networkchain library is free software: you can redistribute it and/or modify
+// The networkchain library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-networkchain library is distributed in the hope that it will be useful,
+// The networkchain library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-networkchain library. If not, see <http://www.gnu.org/licenses/>.
+// along with the networkchain library. If not, see <http://www.gnu.org/licenses/>.
 
 // Package release contains the node service that tracks client releases.
 package release
@@ -25,15 +25,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/networkchain/go-networkchain/accounts/abi/bind"
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/eth"
-	"github.com/networkchain/go-networkchain/internal/ethapi"
-	"github.com/networkchain/go-networkchain/les"
-	"github.com/networkchain/go-networkchain/log"
-	"github.com/networkchain/go-networkchain/node"
-	"github.com/networkchain/go-networkchain/p2p"
-	"github.com/networkchain/go-networkchain/rpc"
+	"github.com/networkchain/networkchain/accounts/abi/bind"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/eth"
+	"github.com/networkchain/networkchain/internal/ethapi"
+	"github.com/networkchain/networkchain/les"
+	"github.com/networkchain/networkchain/log"
+	"github.com/networkchain/networkchain/node"
+	"github.com/networkchain/networkchain/p2p"
+	"github.com/networkchain/networkchain/rpc"
 )
 
 // Interval to check for new releases
@@ -149,7 +149,7 @@ func (r *ReleaseService) checkVersion() {
 
 		warning := fmt.Sprintf("Client v%d.%d.%d-%x seems older than the latest upstream release v%d.%d.%d-%x",
 			r.config.Major, r.config.Minor, r.config.Patch, r.config.Commit[:4], version.Major, version.Minor, version.Patch, version.Commit[:4])
-		howtofix := fmt.Sprintf("Please check https://github.com/networkchain/go-networkchain/releases for new releases")
+		howtofix := fmt.Sprintf("Please check https://github.com/networkchain/networkchain/releases for new releases")
 		separator := strings.Repeat("-", len(warning))
 
 		log.Warn(separator)

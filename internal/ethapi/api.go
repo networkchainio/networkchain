@@ -1,18 +1,18 @@
-// Copyright 2015 The go-networkchain Authors
-// This file is part of the go-networkchain library.
+// Copyright 2015 The networkchain Authors
+// This file is part of the networkchain library.
 //
-// The go-networkchain library is free software: you can redistribute it and/or modify
+// The networkchain library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-networkchain library is distributed in the hope that it will be useful,
+// The networkchain library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-networkchain library. If not, see <http://www.gnu.org/licenses/>.
+// along with the networkchain library. If not, see <http://www.gnu.org/licenses/>.
 
 package ethapi
 
@@ -25,22 +25,22 @@ import (
 	"strings"
 	"time"
 
-	"github.com/networkchain/go-networkchain/accounts"
-	"github.com/networkchain/go-networkchain/accounts/keystore"
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/common/hexutil"
-	"github.com/networkchain/go-networkchain/common/math"
-	"github.com/networkchain/go-networkchain/consensus/ethash"
-	"github.com/networkchain/go-networkchain/core"
-	"github.com/networkchain/go-networkchain/core/types"
-	"github.com/networkchain/go-networkchain/core/vm"
-	"github.com/networkchain/go-networkchain/crypto"
-	"github.com/networkchain/go-networkchain/ethdb"
-	"github.com/networkchain/go-networkchain/log"
-	"github.com/networkchain/go-networkchain/p2p"
-	"github.com/networkchain/go-networkchain/params"
-	"github.com/networkchain/go-networkchain/rlp"
-	"github.com/networkchain/go-networkchain/rpc"
+	"github.com/networkchain/networkchain/accounts"
+	"github.com/networkchain/networkchain/accounts/keystore"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/common/hexutil"
+	"github.com/networkchain/networkchain/common/math"
+	"github.com/networkchain/networkchain/consensus/ethash"
+	"github.com/networkchain/networkchain/core"
+	"github.com/networkchain/networkchain/core/types"
+	"github.com/networkchain/networkchain/core/vm"
+	"github.com/networkchain/networkchain/crypto"
+	"github.com/networkchain/networkchain/ethdb"
+	"github.com/networkchain/networkchain/log"
+	"github.com/networkchain/networkchain/p2p"
+	"github.com/networkchain/networkchain/params"
+	"github.com/networkchain/networkchain/rlp"
+	"github.com/networkchain/networkchain/rpc"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/util"
 )
@@ -370,7 +370,7 @@ func signHash(data []byte) []byte {
 //
 // The key used to calculate the signature is decrypted with the given password.
 //
-// https://github.com/networkchain/go-networkchain/wiki/Management-APIs#personal_sign
+// https://github.com/networkchain/networkchain/wiki/Management-APIs#personal_sign
 func (s *PrivateAccountAPI) Sign(ctx context.Context, data hexutil.Bytes, addr common.Address, passwd string) (hexutil.Bytes, error) {
 	// Look up the wallet containing the requested signer
 	account := accounts.Account{Address: addr}
@@ -397,7 +397,7 @@ func (s *PrivateAccountAPI) Sign(ctx context.Context, data hexutil.Bytes, addr c
 // Note, the signature must conform to the secp256k1 curve R, S and V values, where
 // the V value must be be 27 or 28 for legacy reasons.
 //
-// https://github.com/networkchain/go-networkchain/wiki/Management-APIs#personal_ecRecover
+// https://github.com/networkchain/networkchain/wiki/Management-APIs#personal_ecRecover
 func (s *PrivateAccountAPI) EcRecover(ctx context.Context, data, sig hexutil.Bytes) (common.Address, error) {
 	if len(sig) != 65 {
 		return common.Address{}, fmt.Errorf("signature must be 65 bytes long")

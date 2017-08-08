@@ -5,7 +5,7 @@ package whisperv5
 import (
 	"encoding/json"
 
-	"github.com/networkchain/go-networkchain/common/hexutil"
+	"github.com/networkchain/networkchain/common/hexutil"
 )
 
 func (m Message) MarshalJSON() ([]byte, error) {

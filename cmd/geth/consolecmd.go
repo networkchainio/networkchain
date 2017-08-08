@@ -1,18 +1,18 @@
-// Copyright 2016 The go-networkchain Authors
-// This file is part of go-networkchain.
+// Copyright 2016 The networkchain Authors
+// This file is part of networkchain.
 //
-// go-networkchain is free software: you can redistribute it and/or modify
+// networkchain is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// go-networkchain is distributed in the hope that it will be useful,
+// networkchain is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with go-networkchain. If not, see <http://www.gnu.org/licenses/>.
+// along with networkchain. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -21,10 +21,10 @@ import (
 	"os/signal"
 	"strings"
 
-	"github.com/networkchain/go-networkchain/cmd/utils"
-	"github.com/networkchain/go-networkchain/console"
-	"github.com/networkchain/go-networkchain/node"
-	"github.com/networkchain/go-networkchain/rpc"
+	"github.com/networkchain/networkchain/cmd/utils"
+	"github.com/networkchain/networkchain/console"
+	"github.com/networkchain/networkchain/node"
+	"github.com/networkchain/networkchain/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -40,7 +40,7 @@ var (
 		Description: `
 The Netk console is an interactive shell for the JavaScript runtime environment
 which exposes a node admin interface as well as the Ðapp JavaScript API.
-See https://github.com/networkchain/go-networkchain/wiki/Javascipt-Console.`,
+See https://github.com/networkchain/networkchain/wiki/Javascipt-Console.`,
 	}
 
 	attachCommand = cli.Command{
@@ -53,7 +53,7 @@ See https://github.com/networkchain/go-networkchain/wiki/Javascipt-Console.`,
 		Description: `
 The Netk console is an interactive shell for the JavaScript runtime environment
 which exposes a node admin interface as well as the Ðapp JavaScript API.
-See https://github.com/networkchain/go-networkchain/wiki/Javascipt-Console.
+See https://github.com/networkchain/networkchain/wiki/Javascipt-Console.
 This command allows to open a console on a running netk node.`,
 	}
 
@@ -66,7 +66,7 @@ This command allows to open a console on a running netk node.`,
 		Category:  "CONSOLE COMMANDS",
 		Description: `
 The JavaScript VM exposes a node admin interface as well as the Ðapp
-JavaScript API. See https://github.com/networkchain/go-networkchain/wiki/Javascipt-Console`,
+JavaScript API. See https://github.com/networkchain/networkchain/wiki/Javascipt-Console`,
 	}
 )
 

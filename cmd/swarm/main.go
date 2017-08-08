@@ -1,18 +1,18 @@
-// Copyright 2016 The go-networkchain Authors
-// This file is part of go-networkchain.
+// Copyright 2016 The networkchain Authors
+// This file is part of networkchain.
 //
-// go-networkchain is free software: you can redistribute it and/or modify
+// networkchain is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// go-networkchain is distributed in the hope that it will be useful,
+// networkchain is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with go-networkchain. If not, see <http://www.gnu.org/licenses/>.
+// along with networkchain. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -30,23 +30,23 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/networkchain/go-networkchain/accounts"
-	"github.com/networkchain/go-networkchain/accounts/keystore"
-	"github.com/networkchain/go-networkchain/cmd/utils"
-	"github.com/networkchain/go-networkchain/common"
-	"github.com/networkchain/go-networkchain/console"
-	"github.com/networkchain/go-networkchain/contracts/ens"
-	"github.com/networkchain/go-networkchain/crypto"
-	"github.com/networkchain/go-networkchain/ethclient"
-	"github.com/networkchain/go-networkchain/internal/debug"
-	"github.com/networkchain/go-networkchain/log"
-	"github.com/networkchain/go-networkchain/node"
-	"github.com/networkchain/go-networkchain/p2p"
-	"github.com/networkchain/go-networkchain/p2p/discover"
-	"github.com/networkchain/go-networkchain/params"
-	"github.com/networkchain/go-networkchain/rpc"
-	"github.com/networkchain/go-networkchain/swarm"
-	bzzapi "github.com/networkchain/go-networkchain/swarm/api"
+	"github.com/networkchain/networkchain/accounts"
+	"github.com/networkchain/networkchain/accounts/keystore"
+	"github.com/networkchain/networkchain/cmd/utils"
+	"github.com/networkchain/networkchain/common"
+	"github.com/networkchain/networkchain/console"
+	"github.com/networkchain/networkchain/contracts/ens"
+	"github.com/networkchain/networkchain/crypto"
+	"github.com/networkchain/networkchain/ethclient"
+	"github.com/networkchain/networkchain/internal/debug"
+	"github.com/networkchain/networkchain/log"
+	"github.com/networkchain/networkchain/node"
+	"github.com/networkchain/networkchain/p2p"
+	"github.com/networkchain/networkchain/p2p/discover"
+	"github.com/networkchain/networkchain/params"
+	"github.com/networkchain/networkchain/rpc"
+	"github.com/networkchain/networkchain/swarm"
+	bzzapi "github.com/networkchain/networkchain/swarm/api"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -164,7 +164,7 @@ var app = utils.NewApp(gitCommit, "NetworkChain Swarm")
 func init() {
 	app.Action = bzzd
 	app.HideVersion = true // we have a command to print the version
-	app.Copyright = "Copyright 2013-2016 The go-networkchain Authors"
+	app.Copyright = "Copyright 2013-2016 The networkchain Authors"
 	app.Commands = []cli.Command{
 		{
 			Action:    version,
